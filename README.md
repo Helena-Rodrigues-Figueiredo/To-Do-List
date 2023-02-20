@@ -44,12 +44,11 @@ cd To-Do-List
 docker container run --name container-mysql -e MYSQL_ROOT_PASSWORD=sua-senha-mysql -d -p 3306:3306 mysql:5.7
 ```
 
-5. Acesse as pastas "backend" e "frontend", instale as dependências, crie o banco de dados 'todolist' e inicie o servidor:
+5. Acesse as pastas "backend" e "frontend", instale as dependências e dê npm start/run serve:
 ```
 cd backend
 npm install
-npm run db-init
-npm run dev
+npm start
 ```
 ```
 cd frontend

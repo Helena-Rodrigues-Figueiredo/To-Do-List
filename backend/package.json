@@ -6,8 +6,8 @@
   "scripts": {
     "prestart": "npx sequelize db:create && npx sequelize db:migrate",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "dev": "node src/server.js"
   },
   "keywords": [],
   "author": "",
