@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "dev": "sequelize db:create && sequelize db:migrate && nodemon src/server.js"
+    "db-init": "sequelize db:create && sequelize db:migrate && nodemon",
+    "dev": "src/server.js"
   },
   "keywords": [],
   "author": "",
