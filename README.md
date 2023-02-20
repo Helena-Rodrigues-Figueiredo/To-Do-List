@@ -33,20 +33,18 @@ Desenvolvi uma aplicação completa utilizando Node.js no backend e Vue.js no fr
 ```
 git clone git@github.com:Helena-Rodrigues-Figueiredo/To-Do-List.git
 ```
-2. Crie o arquivo ".env" na pasta "backend" com as variáveis necessárias:
+2. Acesse a pasta 'To-Do-List'
 ```
-MYSQL_USER=
-MYSQL_PASSWORD=
-MYSQL_DATABASE=
-MYSQL_HOST=
-PORT=
+cd To-Do-List
 ```
-3. Caso queira utilizar o SQL pelo Docker utilize o seguinte comando:
+3. Altere o arquivo ".env-example" na pasta "backend" para ".env" e preencha com suas variáveis;
+
+4. Caso queira utilizar o SQL pelo Docker utilize o seguinte comando:
 ```
-docker container run --name container-mysql -e MYSQL_ROOT_PASSWORD=senha-mysql -d -p 3306:3306 mysql:5.7
+docker container run --name container-mysql -e MYSQL_ROOT_PASSWORD=sua-senha-mysql -d -p 3306:3306 mysql:5.7
 ```
 
-4. Acesse as pastas "frontend" e "backend", instale as dependências, crie o banco de dados 'todolist' e inicie o servidor:
+5. Acesse as pastas "backend" e "frontend", instale as dependências, crie o banco de dados 'todolist' e inicie o servidor:
 ```
 cd backend
 npm install
