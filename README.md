@@ -5,6 +5,14 @@ através do checkbox. Para ter acesso às suas tarefas, o usuário deve acessar 
 na página User.
 Desenvolvi uma aplicação completa utilizando Node.js no backend e Vue.js no frontend.
 
+## Link da aplicação:
+* [To-Do-List](https://to-do-list-2023.surge.sh/)
+* Usuário para teste:  
+```
+email: user@email.com  
+senha: 123456  
+```
+
 ## Páginas da aplicação
 
 ![Captura de tela de 2023-02-20 10-36-06](https://user-images.githubusercontent.com/99517204/220123369-5a3bbc78-1a2e-409b-8004-127bd525f946.png)
@@ -29,29 +37,42 @@ Desenvolvi uma aplicação completa utilizando Node.js no backend e Vue.js no fr
 
 ## Como rodar o projeto na sua máquina 
 
-1. Navegue até o local onde deseja clonar o repositório e utilize o git clone:
+### 1. Navegue até o local onde deseja clonar o repositório e utilize o git clone:
 ```
 git clone git@github.com:Helena-Rodrigues-Figueiredo/To-Do-List.git
 ```
-2. Acesse a pasta 'To-Do-List'
+
+### 2. Acesse a pasta 'To-Do-List'
 ```
 cd To-Do-List
 ```
-3. Altere o arquivo ".env-example" na pasta "backend" para ".env" e preencha com suas variáveis;
 
-4. Caso queira utilizar o SQL pelo Docker utilize o seguinte comando:
+### 3. Na pasta "backend", altere o arquivo ".env-example" para ".env" e preencha com suas variáveis;
+
+
+### 4. Para utilizar o SQL pelo Docker utilize o seguinte comando:
 ```
 docker container run --name container-mysql -e MYSQL_ROOT_PASSWORD=sua-senha-mysql -d -p 3306:3306 mysql:5.7
 ```
 
-5. Acesse as pastas "backend" e "frontend", instale as dependências e dê npm start/run serve:
+### 5. Acesse as pasta "frontend", instale as dependências e rode npm run serve:
 ```
 cd backend
 npm install
 npm start
 ```
+
+### 6. Acesse as pasta "backend", instale as dependências, rode npm start e altere o arquivo http.js:
 ```
 cd frontend
 npm install
 npm run serve
 ```
+* No arquivo frontend/src/services/https.js comente a variável baseURL e descomente a baseURL: 'http://localhost:3001'. Caso seu
+backend não esteja rodando na porta 3001, realize a alteração da porta
+
+### 7. Após acessar o frontend, crie um usuário no formato:
+
+Nome: deve conter no mínimo 3 caracteres   
+Email: usuario@email.com   
+Password: deve conter no mínimo 6 caracteres   
