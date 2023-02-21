@@ -1,10 +1,7 @@
 import axios from 'axios';
 
-const HOST = process.env.VUE_APP_API_HOST || 'localhost';
-const PROTOCOL = process.env.VUE_APP_API_PROTOCOL || 'http';
-
 const axiosInstance = axios.create({
-  baseURL: `${PROTOCOL}://${HOST}`,
+  baseURL: 'https://to-do-list-backend.up.railway.app/',
   headers: {
     'Content-type': 'application/json'
   }
