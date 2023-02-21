@@ -1,13 +1,13 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  devServer: {
-    proxy: {
-      '^/': {
-        target: 'https://to-do-list-backend.up.railway.app',
-        ws: true,
-        changeOrigin: true
-      }
-    }
-  }
+  // devServer: {
+  //   proxy: {
+  //     '^/': {
+  //       target: 'https://to-do-list-backend.up.railway.app',
+  //       ws: true,
+  //       changeOrigin: true
+  //     }
+  //   }
+  // }
 })
