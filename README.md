@@ -1,8 +1,6 @@
 # Bem-vindo ao projeto To-Do-List 📚
 
-Neste projeto foi criada uma lista de tarefas que permite ao usuário adicionar, editar e excluir tarefas. A tarefa pode ser marcada como "Concluída"
-através do checkbox. Para ter acesso às suas tarefas, o usuário deve acessar sua conta através de seu Login e Senha, e caso não tenha conta deve se cadastrar
-na página User.
+Neste projeto foi criada uma to-do-list que permite ao usuário adicionar, editar e excluir tarefas. A tarefa pode ser marcada como "Pendente" ou "Concluída" através do checkbox. Para ter acesso às suas tarefas, o usuário deve acessar sua conta através de seu Login e Senha. Caso não seja cadastrado, deve acessar a página User e criar um cadastro inserindo "nome, email e senha".
 Desenvolvi uma aplicação completa utilizando Node.js no backend e Vue.js no frontend.
 
 ## Link da aplicação:
